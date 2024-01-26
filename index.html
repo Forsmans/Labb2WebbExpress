@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>API Documentation</h1>
+
+  <p>This is a Express API made to communicate to a .NET API</p>
+  <hr>
+  
+  <h2>Endpoints</h2>
+  <hr>
+
+  <h3>Index/Documentation</h3>
+  <p>Endpoint: <code>/</code></p>
+  <p>Method: <code>GET</code></p>
+  <code>Example: http://localhost:7025/</code><br>
+  <hr>
+
+  <h3>Create User</h3>
+  <p>Endpoint: <code>/user/:name/:age</code></p>
+  <p>Method: <code>POST</code></p>
+  <p>Parameters:
+    <ul>
+      <li><code>:name</code> (string) - User's name</li>
+      <li><code>:age</code> (number) - User's age</li>
+    </ul>
+  </p>
+  <code> Example: http://localhost:7025/user/John/25</code><br>
+  <hr>
+
+  <h3>Retrieve All Users</h3>
+  <p>Endpoint: <code>/users</code></p>
+  <p>Method: <code>GET</code></p>
+  <p>Returns: Array of user data</p>
+  <code> Example: http://localhost:7025/users</code><br>
+  <hr>
+
+  <h3>Retrieve Single User by ID</h3>
+  <p>Endpoint: <code>/user/:id</code></p>
+  <p>Method: <code>GET</code></p>
+  <p>Parameters:
+    <ul>
+      <li><code>:id</code> (string) - User's ID</li>
+    </ul>
+  </p>
+  <p>Returns: User data for the specified ID</p>
+  <code> Example: http://localhost:7025/user/123</code><br>
+  <hr>
+
+  <h3>Update User by ID</h3>
+  <p>Endpoint: <code>/user/:id</code></p>
+  <p>Method: <code>PUT</code></p>
+  <p>Parameters:
+    <ul>
+      <li><code>:id</code> (string) - User's ID</li>
+    </ul>
+  </p>
+  <code> Example: http://localhost:7025/user/123 in Postman:'{"name": "John", "age": 26}'</code><br>
+  <hr>
+
+  <h3>Delete User by ID</h3>
+  <p>Endpoint: <code>/user/:id</code></p>
+  <p>Method: <code>DELETE</code></p>
+  <p>Parameters:
+    <ul>
+      <li><code>:id</code> (string) - User's ID</li>
+    </ul>
+  </p>
+  <code> Example: http://localhost:7025/user/123</code>
+  <hr>
+
+</body>
+</html>
